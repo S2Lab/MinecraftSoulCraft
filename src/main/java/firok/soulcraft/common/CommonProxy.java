@@ -12,7 +12,7 @@ public class CommonProxy
 {
     public void preInit(FMLPreInitializationEvent event)
     {
-    	// new ConfigLoader(event);
+    	new ConfigLoader(event);
         new CreativeTabsLoader(event);
         new FluidLoader(event);
         new ItemLoader(event);

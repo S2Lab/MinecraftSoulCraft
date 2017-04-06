@@ -2,6 +2,7 @@ package firok.soulcraft.item;
 
 import creativetab.CreativeTabsLoader;
 import firok.soulcraft.SoulCraft;
+import firok.soulcraft.common.ConfigLoader;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
@@ -9,8 +10,7 @@ import net.minecraftforge.common.util.EnumHelper;
 public class ItemSilverArmor extends ItemArmor
 {
     public static final ItemArmor.ArmorMaterial SILVER_ARMOR = EnumHelper.addArmorMaterial("SILVER",
-            SoulCraft.MODID + ":" + "silver", 10, new int[]
-            { 2, 6, 4, 2 }, 10, null, 3.0F);
+            SoulCraft.MODID + ":" + "silver", ConfigLoader.silverArmor_durability, ConfigLoader.silverArmor_reductionAmounts, ConfigLoader.silverArmor_enchantability, ConfigLoader.silverArmor_soundOnEquip, ConfigLoader.silverArmor_toughness);
 
     public ItemSilverArmor(EntityEquipmentSlot armorType)
     {
