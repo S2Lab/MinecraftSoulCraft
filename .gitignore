@@ -20,3 +20,24 @@ build
 # other
 eclipse
 run
+
+/.gradle/
+/.settings/
+/bin/
+/build/
+/eclipse/
+/gradle/
+/run/
+.classpath
+.project
+*gradle*
+*.launch
+LICENSE*
+MinecraftForge*
+Paulscode*
+README*
+Thumbs.db
+CREDITS*
+*changelog.txt
+*.exe
+*.psd
